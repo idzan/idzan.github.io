@@ -105,8 +105,13 @@ body {
   }
 }
 
-.about-section {
+.title-section {
   padding-top: 10rem;
+  height: 15vh;
+  color: whitesmoke;
+}
+
+.title {
   color: whitesmoke;
 }
 
