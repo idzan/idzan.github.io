@@ -115,17 +115,10 @@ body {
   color: whitesmoke;
 }
 
-.my-works-section, .blog-section, .contact-me-section {
-  padding-top: 10rem;
-  color: whitesmoke;
+.about-details {
+  padding-bottom: 2rem;
 }
 
-/* .my-work-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  color: whitesmoke;
-}
- */
 /*
 * CUstom Tweaks
 */
