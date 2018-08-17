@@ -7,7 +7,5 @@ url: "https://idzan.eu"
 markdown: kramdown
 
 # Portfolio Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /my-works/:path/
+#collections:
+#  portfolio:
