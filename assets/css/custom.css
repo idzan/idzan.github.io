@@ -2,11 +2,11 @@
 * Marko Idzan Template
 */
 body {
-  background-color: darkslategrey;
+  background: #d9dbdb;
 }
 
 .nav-link {
-  color: goldenrod;
+  color: #FF5E00;
 }
 
 #mainNav {
@@ -16,22 +16,16 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #00FFFF;
+  border: 1px solid #00FFFF;
 }
 
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 
-/* #mainNav .navbar-brand {
-  color: #161616;
-  font-weight: 700;
-  padding: .9rem 0;
-}
- */
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(goldenrod, 80%);
+  color: fade(#FF5E00, 80%);
   outline: none;
   background-color: transparent;
 }
@@ -49,45 +43,56 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
-  /* #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
-  } */
+
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: goldenrod;
+    color: #FF5E00;
   }
   #mainNav .nav-link:hover {
-    color: gold;
+    color: #B24200;
+    border-bottom: #B24200 solid 0.25rem;
   }
   #mainNav .nav-link:active {
     color: white;
+    border-bottom: #B24200 solid 0.25rem;
   }
   #mainNav.navbar-shrink {
     background-color: whitesmoke;
   }
-  /* #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
-  } */
+
   #mainNav.navbar-shrink .nav-link {
-    color: goldenrod;
+    color: #FF5E00;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: goldenrod;
+    color: #FF5E00;
+    border-bottom: #B24200 solid 0.25rem;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: goldenrod;
+    color: #FF5E00;
+    border-bottom: #B24200 solid 0.25rem;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: gold;
+    color: #B24200;
     outline: none;
-    border-bottom: 0.25rem solid gold;
+    border-bottom: 0.25rem solid #B24200;
   }
 }
 
+.nav-pills .nav-link.active, .nav-pills.show > .nav-link {
+  background-color: #19FFFF;
+  color: #000000;
+}
+
+.nav-pills .nav-link {
+  border-radius: 1rem;
+}
+
+.bg-info {
+  background-color: #00FFFF !important;
+}
 
 .masthead {
   position: relative;
@@ -95,7 +100,8 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  color: white;
+  background: url(../img/background.png) repeat center;
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -108,11 +114,13 @@ body {
 .title-section {
   padding-top: 10rem;
   height: 15vh;
-  color: whitesmoke;
+  background: url(../img/background.png) repeat center;
+  color: black;
 }
 
 .title {
-  color: whitesmoke;
+  background: url(../img/background.png) repeat center;
+  color: black;
 }
 
 .about-details {
@@ -120,7 +128,7 @@ body {
 }
 
 /*
-* CUstom Tweaks
+* Custom Tweaks
 */
 .shadow-custom {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
