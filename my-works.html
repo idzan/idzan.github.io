@@ -5,35 +5,18 @@ navigation_weight: 3
 ---
 <div class="container spaced">
     <div class="row">
-        <div class="col-4">
+        {% for item in site.portfolio %}
+        <div class="col-4 text-center">
             <picture>
-                <source srcset="/assets/img/portfolio/maskice-hr/maskice.webp" type="image/webp">
-                <source srcset="/assets/img/portfolio/maskice-hr/maskice.png" type="image/png">
-                    <img src="/assets/img/portfolio/maskice-hr/maskice.png" class="img-fluid rounded" alt="maskice.hr">
+                <source srcset="{{ item.image_webp }}" type="image/webp">
+                <source srcset="{{ item.image_jpg }}" type="image/jpeg">
+                <img src="{{ item.image_jpg }}" class="img-fluid" alt="{{ item.project_name }}">
             </picture>
-            <h4 class="text-center mx-auto">Website and WebShop of Maskice.hr , Zagreb</h4>
-            <p class="text-faded">Web Design</p>
-            <a href="https://maskice.hr" role="button" class="btn btn-outline-secondary">Visit Project Site</a>
+            <h4>{{ item.project_name }}</h4>
+            <p class="text-faded">{{ item.category }}</p>
+            <a href="{{ item.url }}" role="button" class="btn btn-outline-secondary">Learn More</a>
+            <a href="{{ item.project_link }}" role="button" class="btn btn-outline-secondary">Visit Site</a>
         </div>
-        <div class="col-4">
-                <picture>
-                    <source srcset="/assets/img/portfolio/zupa-petrusevec/zupa-petrusevec.webp" type="image/webp">
-                    <source srcset="/assets/img/portfolio/zupa-petrusevec/zupa-petrusevec.jpg" type="image/jpeg">
-                        <img src="/assets/img/portfolio/zupa-petrusevec/zupa-petrusevec.jpg" class="img-fluid rounded" alt="Župa sv. Vida Petruševec">
-                </picture>
-                <h4 class="text-center mx-auto">Website of The parish of St. Vitus, Zagreb-Petrusevec</h4>
-                <p class="text-faded">Web Design</p>
-                <a href="https://zupa-petrusevec.hr" role="button" class="btn btn-outline-secondary">Visit Project Site</a>
-        </div>
-        <div class="col-4">
-                <picture>
-                    <source srcset="/assets/img/portfolio/najam-vozila/najam-vozila.webp" type="image/webp">
-                    <source srcset="/assets/img/portfolio/najam-vozila/najam-vozila.jpeg" type="image/jpeg">
-                        <img src="/assets/img/portfolio/najam-vozila/najam-vozila.jpeg" class="img-fluid rounded" alt="maskice.hr">
-                </picture>
-                <h4 class="text-center mx-auto">Web Site and Branding for najam-vozila.hr</h4>
-                <p class="text-faded">Web Design, Branding</p>
-                <a href="https://najam-vozila.hr/" role="button" class="btn btn-outline-secondary">Visit Project Site</a>
-        </div>
+        {% endfor %}
     </div>
 </div>

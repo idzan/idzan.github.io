@@ -1,11 +1,31 @@
+# Base Informations about Web Site
 title: Marko Idžan
 email: marko@idzan.eu
 description: Marko Idžan's Official Web Site and Blog
-baseurl: ""
+baseurl: 
 url: "https://idzan.eu"
 
+# Markdown Details
 markdown: kramdown
 
+# Plugins
+plugins:
+  - jekyll-pwa-plugin
+
 # Portfolio Collections
-#collections:
-#  portfolio:
+collections:
+  portfolio:
+    output: true
+
+# PWA Configration
+pwa:
+  sw_src_filepath: service-worker.js
+  sw_dest_filename: service-worker.js
+  dest_js_directory: assets/js
+  precache_recent_posts_num: 5
+  precache_glob_directory:
+  precache_glob_patterns:
+    - "{js,css,fonts}"/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores:
+    - sw-register.js
