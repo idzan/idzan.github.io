@@ -25,6 +25,11 @@ pwa:
   precache_recent_posts_num: 5
   precache_glob_directory:
   precache_glob_patterns:
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
     - index.html
+    - about.html
+    - contact.html
+    - blog.html
   precache_glob_ignores:
     - sw-register.js
+    - "fonts/**/*"
