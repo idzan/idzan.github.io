@@ -2,6 +2,7 @@
 layout: page
 title: My Works
 navigation_weight: 3
+permalink: /my-works/
 ---
 <div class="container spaced">
     <div class="row">
@@ -15,7 +16,7 @@ navigation_weight: 3
             <h4>{{ item.project_name }}</h4>
             <p class="text-faded">{{ item.category }}</p>
             <a href="{{ item.url }}" role="button" class="btn btn-outline-secondary">Learn More</a>
-            <a href="{{ item.project_link }}" role="button" class="btn btn-outline-secondary">Visit Site</a>
+            <a href="{{ item.project_link }}" role="button" class="btn btn-outline-primary">Visit Site</a>
         </div>
         {% endfor %}
     </div>

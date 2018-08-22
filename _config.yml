@@ -11,6 +11,10 @@ markdown: kramdown
 # Plugins
 plugins:
   - jekyll-pwa-plugin
+  - jekyll-email-protect
+  - jekyll-analytics
+  - jekyll-last-modified-at
+
 
 # Portfolio Collections
 collections:
@@ -33,3 +37,9 @@ pwa:
   precache_glob_ignores:
     - sw-register.js
     - "fonts/**/*"
+
+# Analytics Configuration
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-47485892-10
+    anonymizeIp: true

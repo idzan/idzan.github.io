@@ -1,0 +1,16 @@
+---
+layout: blog-page
+---
+<div class="container">
+    <div class="row spaced">
+        <div class="col-10">
+            {{ content }}
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-2">
+            <p class="text-faded">Posted on: {{ page.date | date_to_long_string }}</p>
+        </div>
+    </div>
+</div>

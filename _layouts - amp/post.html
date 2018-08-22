@@ -1,0 +1,14 @@
+---
+layout: page
+---
+{% if page.path contains '_posts' %}
+  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+{% endif %}
+<div class="row spaced">
+    <div class="col">
+        {{ content }}
+    </div>
+    <div class="col">
+        <p class="text-faded">Posted on: {{ page.date | date_to_long_string }}</p>
+    </div>
+</div>
