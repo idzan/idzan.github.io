@@ -24,3 +24,5 @@ defaults:
       path: "_posts"
     values:
 layout: "default"
+
+canonical_baseurl: ""

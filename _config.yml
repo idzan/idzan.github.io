@@ -4,6 +4,7 @@ email: marko@idzan.eu
 description: Marko Idžan's Official Web Site and Blog
 baseurl: 
 url: "https://idzan.eu"
+permalink: /:title/
 
 # Markdown Details
 markdown: kramdown

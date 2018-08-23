@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <link rel="stylesheet" href="{{ base.url }}/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ base.url }}/assets/css/all.min.css">
-        <link rel="stylesheet" href="{{ base.url }}/assets/css/custom.css">
+<!doctype html>
+<html amp lang="en">
 
-        <link rel="manifest" href="{{ base.url }}/manifest.json">
+	{% include amp-head.html %}
 
-        <title>Marko Idžan - {{ page.title }}</title>
-    
-    </head>
-    
     <body>
-        
-        {% include navigation.html %}
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="{{ site.baseurl }}/index.html">{{ site.title }}</a>
+            </div>
+        </header>
+        <div class="wrapper">
+            {{ content }}
+        </div>
 
-        {{ content }}
-
-        {% include scripts.html %}
+        {% include amp-footer.html %}
 
     </body>
 </html>
+
