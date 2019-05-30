@@ -1,0 +1,384 @@
+body, html {
+  height: calc(100% - 2em);
+  margin: 0;
+  font-family: 'Lato';
+}
+
+body {
+  background: #545667;
+  background: linear-gradient(45deg, #545667 0%, #446eb5 50%, #a1dbff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545667', endColorstr='#a1dbff',GradientType=1 );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+aside {
+  background-color: #467DFF;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1.5em;
+      grid-template-columns: auto 1.5em;
+  padding: 1em;
+}
+
+.menu {
+  width: 1.5em;
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  background: #8BA5DF;
+  height: 100%;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: #8BA5DF;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: #8BA5DF;
+  color: white;
+}
+
+.logo {
+  display: none;
+}
+
+main {
+  background-color: white;
+  padding: 1em 1.4em;
+}
+
+.timeline .grid {
+  padding: 0.25em;
+  text-align: center;
+  border-top: black 1px solid;
+}
+
+.year, .position {
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+.edu, .work {
+  font-weight: 600;
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+.skills {
+  margin-left: 2.5em;
+}
+
+.skill {
+  width: 100%;
+  height: 1.25em;
+  background: white;
+  border: solid 1px black;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px #545667;
+}
+
+.skill::before {
+  content: attr(data-exp);
+  display: inline-block;
+  -webkit-animation: load 2s 0s;
+          animation: load 2s 0s;
+}
+
+.skill.learning::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 80%);
+}
+
+.skill.basic::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 60%);
+}
+
+.skill.intermediate::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 40%);
+}
+
+.skill.pro::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 20%);
+}
+
+.skill.advanced::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 10%);
+}
+
+.skill.expert::before {
+  height: inherit;
+  background: #467DFF;
+  width: calc(100% - 0%);
+}
+
+.skillname {
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: .1rem;
+}
+
+.portfolio picture source {
+  width: 80%;
+}
+
+.portfolio picture img {
+  width: 80%;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: .5rem;
+}
+
+.project picture source {
+  width: 80%;
+}
+
+.project picture img {
+  width: 80%;
+}
+
+picture {
+  width: 100%;
+}
+
+.subheading {
+  text-align: center;
+  padding: -0.2em;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem;
+  color: black;
+  background-color: #8BA5DF;
+  border-radius: 5%;
+  border: 0;
+  margin: .25em;
+}
+
+.btn:hover {
+  background-color: #467DFF;
+}
+
+.btn:active {
+  background-color: #467DFF;
+}
+
+.btn.checked {
+  background-color: #467DFF;
+}
+
+.btn.project {
+  padding: .75rem;
+  font-size: .9em;
+  text-decoration: none;
+}
+
+.btn-group {
+  display: block;
+}
+
+.icon {
+  width: 1em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  max-width: 50%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  margin: .3em;
+  padding: .5em;
+  border: #545667 1px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: .5em;
+  resize: vertical;
+}
+
+.social {
+  width: 1.5em;
+  margin: .5em;
+}
+
+.contact {
+  width: 1.25em;
+  margin-right: .5em;
+}
+
+.smaller {
+  font-size: .75em;
+  color: lightslategray;
+}
+
+/* Desktop layout */
+@media only screen and (min-width: 760px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% auto;
+        grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+  aside {
+    background: #467DFF;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 20% auto;
+        grid-template-rows: 20% auto;
+    padding: 0;
+  }
+  main {
+    padding: 4em;
+    background: white url("../img/bg.svg") no-repeat bottom right;
+    background-size: 55%;
+  }
+  ul {
+    display: block;
+    margin-top: 2em;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+  ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: whitesmoke !important;
+  }
+  nav {
+    background: none;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    -webkit-filter: invert(0.9);
+            filter: invert(0.9);
+  }
+  figcaption {
+    display: none;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    padding: 0.25em;
+  }
+  .timeline {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
