@@ -16,5 +16,8 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "start_url": "https://idzan.eu",
-    "display": "standalone"
+    "display": "standalone",
+    "lank": "en",
+    "scope": "/",
+    "description": "Pesonal Web Site and Portfolio for Marko Idzan"
 }

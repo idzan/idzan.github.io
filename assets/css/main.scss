@@ -240,6 +240,9 @@ picture {
 		font-size: .9em;
 		text-decoration: none;
 	}
+	&.pwa-btn {
+		display: none;
+	}
 }
 
 .btn-group {
@@ -318,6 +321,13 @@ input[type=text], input[type=email], textarea {
 	color: lightslategray;
 }
 
+@media only screen and (max-width: 759px) {
+	footer {
+		display: none;
+	}
+}
+
+
 /* Desktop layout */
 @media only screen and (min-width: 760px) {
 	body {
@@ -327,10 +337,19 @@ input[type=text], input[type=email], textarea {
 	}
 
 	aside {
+		min-height: 100%;
         background: #467DFF;
         grid-template-columns: auto;
-        grid-template-rows: 20% auto;
+        grid-template-rows: .2fr auto .2fr;
         padding: 0;
+	}
+
+	footer {
+		height: 100%;
+		background: rgba(255,255,255,.5);
+		color: black;
+		font-size: .9em;
+		text-align: center;
 	}
 
 	main {
