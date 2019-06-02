@@ -22,6 +22,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Marko Idzan</title>
 </head>
+
 <body>
     <aside>
         <figure>
@@ -48,52 +49,40 @@
     </aside>
     <main>
         <h1>I'm Marko Idzan</h1>
-        <p>and I'm IT Administrator, Web Design & Administrator with knowledge of Photography and Video Editing. Some Coding is included.</p>
+        <p>and I'm IT Administrator, Web Design & Administrator with knowledge of Photography and Video Editing. Some
+            Coding is included.</p>
+        <p>Welcome to my personal web site and portfolio.</p>
+        <a href="/about" class="btn cta">Learn more about me</a>
     </main>
     <button class="btn pwa-btn" onclick="install()">Install PWA on your device</button>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-13"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script src="/assets/js/cookie.js"></script>
+    <script src="/assets/js/upup.min.js"></script>
     <script>
-        (function() {
+        (function () {
             var navMenu = document.querySelector('.nav');
             var navMenuLink = document.querySelector('.menu');
 
-            navMenuLink.addEventListener('click', function(e) {
+            navMenuLink.addEventListener('click', function (e) {
                 navMenu.classList.toggle('active');
                 e.preventDefault();
             });
         })();
     </script>
     <script>
-        if (!navigator.serviceWorker.controller) {
-            navigator.serviceWorker.register("/worker.js").then(function(reg) {
-                console.log("Worker has been registered for scope:" + reg.scope);
-            });
-        }
-    </script>
-    <script>
-        let deferredPrompt = null;
-        
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
+        UpUp.start({
+            'content-url': '/offline.html',
+            'assets': [
+                'assets/img/bg.svg',
+                'assets/img/icons/menu.svg',
+                'assets/img/logos/MarkoIdzan.svg',
+                'assets/css/main.css',
+                'assets/css/cookies.min.css'
+            ],
+            'service-worker-url': '/upup.sw.min.js'
         });
-        
-        async function install() {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                console.log(deferredPrompt)
-                deferredPrompt.userChoice.then(function(choiceResult) {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log("You have installed my PWA!");
-                    } else {
-                        console.log("User decided not to install PWA!");
-                    }
-                deferredPrompt = null;
-                });
-            }
-        }
     </script>
 </body>
+
 </html>

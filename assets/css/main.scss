@@ -3,18 +3,17 @@ $light-blue: #8BA5DF;
 $gray: #545667;
 $lighter-blue: #a1dbff;
 
-body, html {
+body,
+html {
 	height: calc(100% - 2em);
 	margin: 0;
 	font-family: 'Lato';
 }
 
 body {
-	background: rgb(84,86,103);
-	background: -moz-linear-gradient(45deg, rgba(84,86,103,1) 0%, rgba(68,110,181,1) 50%, rgba(161,219,255,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(84,86,103,1) 0%,rgba(68,110,181,1) 50%,rgba(161,219,255,1) 100%);
-	background: linear-gradient(45deg, rgba(84,86,103,1) 0%,rgba(68,110,181,1) 50%,rgba(161,219,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545667', endColorstr='#a1dbff',GradientType=1 ); 
+	background: rgb(84, 86, 103);
+	background: linear-gradient(45deg, rgba(84, 86, 103, 1) 0%, rgba(68, 110, 181, 1) 50%, rgba(161, 219, 255, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#545667', endColorstr='#a1dbff', GradientType=1);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -30,7 +29,8 @@ aside {
 .menu {
 	width: 1.5em;
 	cursor: pointer;
-	filter: invert(1);
+	-webkit-filter: invert(1);
+	        filter: invert(1);
 }
 
 figure {
@@ -58,22 +58,22 @@ nav {
 }
 
 ul {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 
-    li {
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: .8em;
-            display: block;
-            padding: 1.5em 3em;
-            background-color: #8BA5DF;
-            color: white;
-        }
-    }
+	li {
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: .8em;
+			display: block;
+			padding: 1.5em 3em;
+			background-color: #8BA5DF;
+			color: white;
+		}
+	}
 }
 
 .logo {
@@ -86,20 +86,28 @@ main {
 }
 
 .timeline {
-    .grid {
-        padding: 0.25em;
-        text-align: center;
-        border-top: black 1px solid;
-    }
+	.grid {
+		padding: 0.25em;
+		text-align: center;
+		border-top: black 1px solid;
+	}
 }
 
-.year, .position {
+.year,
+.position {
 	font-size: 0.85em;
 	font-weight: 200;
 }
 
-.edu, .work {
+.edu,
+.work {
 	font-weight: 600;
+}
+
+@-webkit-keyframes load {
+	from {
+		width: 0%;
+	}
 }
 
 @keyframes load {
@@ -119,12 +127,13 @@ main {
 	border: solid 1px black;
 	position: relative;
 	color: white;
-	text-shadow: 1px 1px 1px rgba(84,86,103,1);
+	text-shadow: 1px 1px 1px rgba(84, 86, 103, 1);
 
 	&::before {
 		content: attr(data-exp);
 		display: inline-block;
-		animation: load 2s 0s;
+		-webkit-animation: load 2s 0s;
+		        animation: load 2s 0s;
 	}
 }
 
@@ -136,6 +145,7 @@ main {
 			width: calc(100% - 80%);
 		}
 	}
+
 	&.basic {
 		&::before {
 			height: inherit;
@@ -143,6 +153,7 @@ main {
 			width: calc(100% - 60%);
 		}
 	}
+
 	&.intermediate {
 		&::before {
 			height: inherit;
@@ -150,6 +161,7 @@ main {
 			width: calc(100% - 40%);
 		}
 	}
+
 	&.pro {
 		&::before {
 			height: inherit;
@@ -157,6 +169,7 @@ main {
 			width: calc(100% - 20%);
 		}
 	}
+
 	&.advanced {
 		&::before {
 			height: inherit;
@@ -164,6 +177,7 @@ main {
 			width: calc(100% - 10%);
 		}
 	}
+
 	&.expert {
 		&::before {
 			height: inherit;
@@ -187,6 +201,7 @@ main {
 		source {
 			width: 80%;
 		}
+
 		img {
 			width: 80%;
 		}
@@ -202,6 +217,7 @@ main {
 		source {
 			width: 80%;
 		}
+
 		img {
 			width: 80%;
 		}
@@ -226,22 +242,34 @@ picture {
 	border-radius: 5%;
 	border: 0;
 	margin: .25em;
+
 	&:hover {
 		background-color: $blue;
 	}
+
 	&:active {
 		background-color: $blue;
 	}
+
 	&.checked {
 		background-color: $blue;
 	}
+
 	&.project {
 		padding: .75rem;
 		font-size: .9em;
 		text-decoration: none;
 	}
+
 	&.pwa-btn {
 		display: none;
+	}
+
+	&.cta {
+		padding: 1.5em;
+		background-color: $light-blue;
+		text-decoration: none;
+		font-weight: bold;
 	}
 }
 
@@ -274,7 +302,7 @@ picture {
 	text-align: center;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0, 0, 0, 0.8);
 
 	img {
 		max-width: 50%;
@@ -296,12 +324,15 @@ picture {
 	display: none;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
 	width: 100%;
 	margin: .3em;
 	padding: .5em;
 	border: #545667 1px solid;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border-radius: .5em;
 	resize: vertical;
 }
@@ -338,15 +369,15 @@ input[type=text], input[type=email], textarea {
 
 	aside {
 		min-height: 100%;
-        background: #467DFF;
-        grid-template-columns: auto;
-        grid-template-rows: .2fr auto .2fr;
-        padding: 0;
+		background: #467DFF;
+		grid-template-columns: auto;
+		grid-template-rows: .2fr auto .2fr;
+		padding: 0;
 	}
 
 	footer {
 		height: 100%;
-		background: rgba(255,255,255,.5);
+		background: rgba(255, 255, 255, .5);
 		color: black;
 		font-size: .9em;
 		text-align: center;
@@ -357,28 +388,28 @@ input[type=text], input[type=email], textarea {
 		background: white url('../img/bg.svg') no-repeat bottom right;
 		background-size: 55%;
 	}
-	
+
 	ul {
-        display: block;
-        margin-top: 2em;
-        position: relative !important;
-        background: none !important;
-        width: 100% !important;
+		display: block;
+		margin-top: 2em;
+		position: relative !important;
+		background: none !important;
+		width: 100% !important;
 
-        li {
-            a {
-                &:hover {
-                    background-color: rgba(255,255,255,.75);
-                    color: whitesmoke !important;
-                }
-            }
-        }
-    }
-
-    nav {
-        background: none;
+		li {
+			a {
+				&:hover {
+					background-color: rgba(255, 255, 255, .75);
+					color: whitesmoke !important;
+				}
+			}
+		}
 	}
-	
+
+	nav {
+		background: none;
+	}
+
 	.menu {
 		display: none;
 	}
@@ -387,7 +418,8 @@ input[type=text], input[type=email], textarea {
 		display: block;
 		width: 40%;
 		margin: 1em auto;
-		filter: invert(.9);
+		-webkit-filter: invert(.9);
+		        filter: invert(.9);
 	}
 
 	figcaption {
@@ -405,7 +437,7 @@ input[type=text], input[type=email], textarea {
 
 	.timeline {
 		display: grid;
-        grid-template-columns:repeat(4, 1fr);
-        grid-gap: 0.5em;
-    }
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 0.5em;
+	}
 }
