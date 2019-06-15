@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/cookies.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/assets/img/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-title" content="Marko Idzan">
+    <meta name="application-name" content="Marko Idzan">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Return To Blogging</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <img src="/assets/img/logos/MarkoIdzan.svg" alt="" class="logo">
+            <figcaption>Marko Idzan</figcaption>
+        </figure>
+        <img src="/assets/img/icons/menu.svg" alt="Menu" class="menu">
+        <nav>
+    <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact Me</a></li>
+    </ul>
+</nav>
+        <footer>
+    <p>
+        <a href="/terms">Terms of service</a>&nbsp; -
+        <a href="/privacy">Privacy policy</a>&nbsp; -
+        <a href="/cookies">Cookie Policy</a>
+    </p>
+    <p>Copyright &copy; 2010. - 2019. All rights reserved.</p>
+</footer>
+    </aside>
+    <main>
+        <h1>Return To Blogging</h1>
+
+<p>It is time to get back into blogging scene.
+That’s right I’m back in blogging world. It was a while when i last time posted something online, and now today I’m getting back with refreshed blog on my domain which is now hosted on <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> .</p>
+
+<p>That is right, all readers of this blog and visitors of web site.</p>
+
+<p>Web is fully Serverless, which means no PHP, no CMS at all, just pure HTML, CSS, Vanilla JS and of course markdown.</p>
+
+<p>Source of this new project can be found at <a href="https://github.com/idzan/idzan.github.io" target="_blank" rel="noopener">repository</a> .</p>
+
+
+<p>15 Jun 2019</p>
+    </main>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-13"></script>
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script src="/assets/js/cookie.js"></script>
+    <script>
+        (function () {
+            var navMenu = document.querySelector('.nav');
+            var navMenuLink = document.querySelector('.menu');
+
+            navMenuLink.addEventListener('click', function (e) {
+                navMenu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+    <script src="/assets/js/upup.min.js"></script>
+
+<script>
+    UpUp.start({
+        'content-url': '/offline.html',
+        'assets': [
+            'assets/img/bg.svg',
+            'assets/img/icons/menu.svg',
+            'assets/img/logos/MarkoIdzan.svg',
+            'assets/css/main.css',
+            'assets/css/cookies.min.css'
+        ],
+        'service-worker-url': '/upup.sw.min.js'
+    });
+</script>
+</body>
+
+</html>

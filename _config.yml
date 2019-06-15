@@ -1,0 +1,11 @@
+title: Marko Idzan
+email: marko@idzan.eu
+description: Marko Idžan's Official Web Site and Blog
+baseurl: 
+url: "https://idzan.eu"
+permalink: /:title/
+markdown: kramdown
+
+collections:
+  projects:
+    output: true

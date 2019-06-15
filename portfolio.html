@@ -1,0 +1,30 @@
+---
+layout: portfolio
+title: Portfolio
+permalink: /portfolio
+---
+<h1>Portfolio</h1>
+<p>Here you can find list of my works which I made, or in which I was one of directors or managers of project.</p>
+
+<div class="btn-group filters-btn-grp">
+    <button class="btn checked" data-filter="*">Show All</button>
+    <button class="btn" data-filter=".web-design">Web Design</button>
+    <button class="btn" data-filter=".web-administration">Web Administration</button>
+    <button class="btn" data-filter=".graphics-design">Graphics Design</button>
+    <button class="btn" data-filter=".android-development">Android Development</button>
+    <button class="btn" data-filter=".web-development">Web Development</button>
+</div>
+
+<div class="portfolio">
+    {% for item in site.projects %}
+    <div class="grid {{ item.categoryclass }}" data-category="{{ item.datacategory }}">
+        <picture>
+            <source srcset="{{ item.thumbnailwebp }}" type="image/webp">
+            <img src="{{ item.thumbnail }}">
+        </picture>
+        <p><strong>{{ item.name }}</strong></p>
+        <p>{{ item.category }}</p>
+        <a href="{{ item.url }}" class="btn project">View project</a>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,45 @@
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script>
+    var elements = document.querySelector('.portfolio');
+    
+    var iso = new Isotope (elements, {
+        itemSelector: '.grid',
+        layoutMode: 'fitRows'
+    });
+    
+    var filterFns = {
+        slctr: function( itemElem ) {
+            var number = itemElem.querySelector('.hide').textContent;
+            return parseInt( number, 1 ) > 2;
+        }
+    };
+
+    var filtersElem = document.querySelector('.filters-btn-grp');
+    filtersElem.addEventListener( 'click', function( event ) {
+        if ( !matchesSelector( event.target, 'button' ) ) {
+            return;
+        }
+
+    var filterValue = event.target.getAttribute('data-filter');
+
+    filterValue = filterFns[ filterValue ] || filterValue;
+    iso.arrange({ filter: filterValue });
+
+    });
+    
+    var buttonGroups = document.querySelectorAll('.btn-group');
+    for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+        var buttonGroup = buttonGroups[i];
+        radioButtonGroup( buttonGroup );
+    }
+    
+    function radioButtonGroup( buttonGroup ) {
+        buttonGroup.addEventListener( 'click', function( event ) {
+            if ( !matchesSelector( event.target, 'button' ) ) {
+                    return;
+            }
+        buttonGroup.querySelector('.checked').classList.remove('checked');
+        event.target.classList.add('checked');
+        });
+    }
+</script>
