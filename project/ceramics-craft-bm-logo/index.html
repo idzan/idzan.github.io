@@ -22,9 +22,8 @@
     <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Marko Idzan</title>
+    <title>Ceramics Craft “BM” Logo Design - Marko Idzan</title>
 </head>
-
 <body>
     <aside>
         <figure>
@@ -50,41 +49,47 @@
         </footer>
     </aside>
     <main>
-        <h1>I'm Marko Idzan</h1>
-        <p>and I'm IT Administrator, Web Design & Administrator with knowledge of Photography and Video Editing. Some
-            Coding is included.</p>
-        <p>Welcome to my personal web site and portfolio.</p>
-        <a href="/about" class="btn cta">Learn more about me</a>
+        <a href="/portfolio" class="btn project">Return to portfolio</a>
+        <h1>Ceramics Craft “BM” Logo Design</h1>
+        <div class="project">
+            <div class="grid">
+                <a href="#projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/ceramics-craft-bm.webp" type="image/webp">
+                        <img src="/assets/img/projects/ceramics-craft-bm-logo.jpg" alt="Ceramics Craft “BM” Logo Design">
+                    </picture>
+                </a>
+                <a href="#_" class="lightbox" id="projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/ceramics-craft-bm.webp" type="image/webp">
+                        <img src="/assets/img/projects/ceramics-craft-bm-logo.jpg" alt="Ceramics Craft “BM” Logo Design">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid">
+                <p>This project is made with idea of refreshing old logo which was sent to me for a web site which is in progress of creating was terrible. I mean, terrible. PNG file with sizes which are so small that even scaling it wouldn’t do anything. So, I took spare time, opened Illustrator CC 2019 and rebuilt it. Now it can be used for any kind of projects, including using it in vectored form even on shirts.</p>
+                <h3 class="uppercase">Project informations</h3>
+                <p><img src="/assets/img/icons/author.svg" alt="Author" class="icon">&nbsp;<span><strong class="uppercase">Author:</strong> Marko Idzan</span></p>
+                <p><img src="/assets/img/icons/customer.svg" alt="Client" class="icon">&nbsp;<span><strong class="uppercase">Client:</strong> Ceramics Craft “BM”</span></p>
+                <p><img src="/assets/img/icons/calendar.svg" alt="Start date" class="icon">&nbsp;<span><strong class="uppercase">Project start date:</strong> January 2019.</span></p>
+            </div>
+        </div>
+        <a href="tiskara-hr-web-shop" class="btn project left">“Tiskara.hr” Web Shop</a>           
+        <a href="croatian-states-woocommerce-plugin" class="btn project right">Croatian States Plugin for WooCommerce</a>           
     </main>
-    <button class="btn pwa-btn" onclick="install()">Install PWA on your device</button>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-13"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script src="/assets/js/cookie.js"></script>
-    <script src="/assets/js/upup.min.js"></script>
     <script>
-        (function () {
+        (function() {
             var navMenu = document.querySelector('.nav');
             var navMenuLink = document.querySelector('.menu');
 
-            navMenuLink.addEventListener('click', function (e) {
+            navMenuLink.addEventListener('click', function(e) {
                 navMenu.classList.toggle('active');
                 e.preventDefault();
             });
         })();
     </script>
-    <script>
-        UpUp.start({
-            'content-url': '/offline.html',
-            'assets': [
-                'assets/img/bg.svg',
-                'assets/img/icons/menu.svg',
-                'assets/img/logos/MarkoIdzan.svg',
-                'assets/css/main.css',
-                'assets/css/cookies.min.css'
-            ],
-            'service-worker-url': '/upup.sw.min.js'
-        });
-    </script>
 </body>
-
 </html>

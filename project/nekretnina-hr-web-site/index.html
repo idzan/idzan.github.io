@@ -22,9 +22,8 @@
     <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Marko Idzan</title>
+    <title>“Nekretnina.hr” Web Site - Marko Idzan</title>
 </head>
-
 <body>
     <aside>
         <figure>
@@ -39,52 +38,50 @@
                 <li><a href="/portfolio">Portfolio</a></li>
                 <li><a href="/contact">Contact Me</a></li>
             </ul>
-        </nav>
-        <footer>
-            <p>
-                <a href="/terms">Terms of service</a>&nbsp; -
-                <a href="/privacy">Privacy policy</a>&nbsp; -
-                <a href="/cookies">Cookie Policy</a>
-            </p>
-            <p>Copyright &copy; 2010. - 2019. All rights reserved.</p>
-        </footer>
+            </nav>
     </aside>
     <main>
-        <h1>I'm Marko Idzan</h1>
-        <p>and I'm IT Administrator, Web Design & Administrator with knowledge of Photography and Video Editing. Some
-            Coding is included.</p>
-        <p>Welcome to my personal web site and portfolio.</p>
-        <a href="/about" class="btn cta">Learn more about me</a>
+        <a href="/portfolio" class="btn project">Return to portfolio</a>
+        <h1>“Nekretnina.hr” Web Site</h1>
+        <div class="project">
+            <div class="grid">
+                <a href="#projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/nekretnina.hr.webp" type="image/webp">
+                        <img src="/assets/img/projects/nekretnina.hr.jpg" alt="“Nekretnina.hr” Web Site">
+                    </picture>
+                </a>
+                <a href="#_" class="lightbox" id="projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/nekretnina.hr.webp" type="image/webp">
+                        <img src="/assets/img/projects/nekretnina.hr.jpg" alt="“Nekretnina.hr” Web Site">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid">
+                <p>“Nekretnina.hr” Web Site was started in May 2018. as first-time idea about redesign of old design of site. At first it was just simple promotional site without much of features, but how work progressed it got upgraded from simple promotional site up to project which use “Reality” theme with custom feature built into it which is custom Dashboard for inserting and editing Real Estates. Site is also connected with platform “Dimedia Nekretnine” for checkups of information’s used from owner of Real Estate and so it can be easily shared on multiple Real Estate networks.</p>
+                <h3 class="uppercase">Project informations</h3>
+                <p><img src="/assets/img/icons/author.svg" alt="Author" class="icon">&nbsp;<span><strong class="uppercase">Author:</strong> Marko Idzan</span></p>
+                <p><img src="/assets/img/icons/customer.svg" alt="Client" class="icon">&nbsp;<span><strong class="uppercase">Client:</strong> Interhaus Nekretnine Ltd.</span></p>
+                <p><img src="/assets/img/icons/calendar.svg" alt="Start date" class="icon">&nbsp;<span><strong class="uppercase">Project start date:</strong> June 2018.</span></p>
+                <p><img src="/assets/img/icons/link.svg" alt="Web Site" class="icon">&nbsp;<span><strong class="uppercase">Project Web Site:</strong> <a href="https://nekretnina.hr" target="_blank">nekretnina.hr</a></span></p>
+            </div>
+        </div>
+        <a href="mybar-hr-web-shop" class="btn project left">“MyBar.hr” Web Shop</a>           
     </main>
-    <button class="btn pwa-btn" onclick="install()">Install PWA on your device</button>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-13"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script src="/assets/js/cookie.js"></script>
-    <script src="/assets/js/upup.min.js"></script>
     <script>
-        (function () {
+        (function() {
             var navMenu = document.querySelector('.nav');
             var navMenuLink = document.querySelector('.menu');
 
-            navMenuLink.addEventListener('click', function (e) {
+            navMenuLink.addEventListener('click', function(e) {
                 navMenu.classList.toggle('active');
                 e.preventDefault();
             });
         })();
     </script>
-    <script>
-        UpUp.start({
-            'content-url': '/offline.html',
-            'assets': [
-                'assets/img/bg.svg',
-                'assets/img/icons/menu.svg',
-                'assets/img/logos/MarkoIdzan.svg',
-                'assets/css/main.css',
-                'assets/css/cookies.min.css'
-            ],
-            'service-worker-url': '/upup.sw.min.js'
-        });
-    </script>
 </body>
-
 </html>

@@ -22,9 +22,8 @@
     <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Marko Idzan</title>
+    <title>Ceramics Craft “BM” Web Site - Marko Idzan</title>
 </head>
-
 <body>
     <aside>
         <figure>
@@ -50,41 +49,48 @@
         </footer>
     </aside>
     <main>
-        <h1>I'm Marko Idzan</h1>
-        <p>and I'm IT Administrator, Web Design & Administrator with knowledge of Photography and Video Editing. Some
-            Coding is included.</p>
-        <p>Welcome to my personal web site and portfolio.</p>
-        <a href="/about" class="btn cta">Learn more about me</a>
+        <a href="/portfolio" class="btn project">Return to portfolio</a>
+        <h1>Ceramics Craft “BM” Web Site</h1>
+        <div class="project">
+            <div class="grid">
+                <a href="#projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/keramicarskiobrtbm.hr.webp" type="image/webp">
+                        <img src="/assets/img/projects/keramicarskiobrtbm.hr.jpg" alt="Ceramics Craft “BM” Web Site">
+                    </picture>
+                </a>
+                <a href="#_" class="lightbox" id="projImg">
+                    <picture>
+                        <source srcset="/assets/img/projects/keramicarskiobrtbm.hr.webp" type="image/webp">
+                        <img src="/assets/img/projects/keramicarskiobrtbm.hr.jpg" alt="Ceramics Craft “BM” Web Site">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid">
+                <p>Web Site for “Ceramics Craft BM” (Croatian: “Keramičarski obrt BM”) was created in August of 2015 as small portfolio of works which are made from this company. Site is running WordPress, and currently it is in state of crating new design which is more modern that design it was using. Old design was based on GeneratePress Theme with few custom tweaks so page looked nice. Right now page uses updated logo design and is starting fresh up with clean design.</p>
+                <h3 class="uppercase">Project informations</h3>
+                <p><img src="/assets/img/icons/author.svg" alt="Author" class="icon">&nbsp;<span><strong class="uppercase">Author:</strong> Marko Idzan</span></p>
+                <p><img src="/assets/img/icons/customer.svg" alt="Client" class="icon">&nbsp;<span><strong class="uppercase">Client:</strong> Ceramics Craft "BM"</span></p>
+                <p><img src="/assets/img/icons/calendar.svg" alt="Start date" class="icon">&nbsp;<span><strong class="uppercase">Project start date:</strong> August 2015.</span></p>
+                <p><img src="/assets/img/icons/link.svg" alt="Web Site" class="icon">&nbsp;<span><strong class="uppercase">Project Web Site:</strong> <a href="https://keramicarskiobrtbm.hr" target="_blank">keramicarskiobrtbm.hr</a></span></p>
+            </div>
+        </div>
+        <a href="maskice-hr-web-shop" class="btn project left">“maskice.hr” Web Shop</a>           
+        <a href="parish-st-vitus-web-site" class="btn project right">“Parish of St. Vitus, Petrusevec - Zagreb” Web Site</a>           
     </main>
-    <button class="btn pwa-btn" onclick="install()">Install PWA on your device</button>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-13"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script src="/assets/js/cookie.js"></script>
-    <script src="/assets/js/upup.min.js"></script>
     <script>
-        (function () {
+        (function() {
             var navMenu = document.querySelector('.nav');
             var navMenuLink = document.querySelector('.menu');
 
-            navMenuLink.addEventListener('click', function (e) {
+            navMenuLink.addEventListener('click', function(e) {
                 navMenu.classList.toggle('active');
                 e.preventDefault();
             });
         })();
     </script>
-    <script>
-        UpUp.start({
-            'content-url': '/offline.html',
-            'assets': [
-                'assets/img/bg.svg',
-                'assets/img/icons/menu.svg',
-                'assets/img/logos/MarkoIdzan.svg',
-                'assets/css/main.css',
-                'assets/css/cookies.min.css'
-            ],
-            'service-worker-url': '/upup.sw.min.js'
-        });
-    </script>
 </body>
-
 </html>
