@@ -5,7 +5,35 @@ baseurl:
 url: "https://idzan.eu"
 permalink: /:title/
 markdown: kramdown
+logo: /assets/img/logos/MarkoIdzan.jpg
+lang: en_US
+
+facebook:
+  publisher: Idzan.Marko.Official
+
+twitter:
+  username: idzanmarko
+  card: summary
+
+social:
+  name: Marko Idzan
+  links:
+    - https://facebook.com/Idzan.Marko.Official
+    - https://twitter.com/idzanmarko
+    - https://www.linkedin.com/in/markoidzan/
+    - https://www.youtube.com/channel/UC1E7cbcnFqHEqTYmbZHKDPA
+    - https://www.instagram.com/markoidzan/
+    - https://www.twitch.tv/idzanmarko
+    - https://github.com/idzan
+
+webmaster_verifications:
+  google: Nqz4seLf_1h2YSk9z3iTG4aNARiu48Q6mlEmtNpFwWw
+  bing: 6E829E71F72385BF19D8107B790FA80D
+  yandex: a461b1e3fb30179a
 
 collections:
   projects:
     output: true
+
+plugins:
+  - jekyll-seo-tag
