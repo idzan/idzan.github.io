@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Marko Idzan
+title: You are Offline! - Marko Idzan
 permalink: /offline
 ---
 # You are looking my website from Offline Mode
