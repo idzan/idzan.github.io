@@ -26,7 +26,7 @@ If you want to contact me you can do it using Social media profiles to contact m
         
         Please fill the contact form if you want to conact me like that
             
-<form id="contactMe">
+<form action="POST" data-netlify="true" id="contactMe">
     <label for="fname">Name</label>
     <input type="text" name="name" id="fname" placeholder="Your name" class="form-name" required>
     <label for="fmail">Email address</label>
@@ -35,9 +35,10 @@ If you want to contact me you can do it using Social media profiles to contact m
     <textarea name="content" id="fmessage" rows="5" placeholder="Your message" class="form-message" required></textarea>
     <div id="infoBox"></div>
     <div class="hidden"><label>Honeypot</label><input type="text" name="security" id="security"></div>
+    <div data-netlify-recaptcha="true"></div>
     <button type="submit" class="btn" id="submit">Send Message</button>
     <p>By sending message, I'm accepting <a href="/terms.html">Terms of Service</a> and <a href="/privacy.html">Privacy Policy</a> of using this web site.</p>
 </form>
 </div>
 </div>
-<script src="/assets/js/contact.js"></script>
+<!--<script src="/assets/js/contact.js"></script>-->
