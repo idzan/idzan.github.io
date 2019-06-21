@@ -1,5 +1,5 @@
 let contactForm = document.querySelector("contactMe");
-let infoDetails = document.querySelector("infoBox");
+let infoDetails = document.getElementById("infoBox");
 
 
 contactForm.addEventListener('submit', e => {
