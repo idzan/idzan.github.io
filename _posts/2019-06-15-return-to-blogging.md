@@ -1,4 +1,5 @@
 ---
+title: Return to Blogging
 layout: post
 author: Marko
 ---
