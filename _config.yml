@@ -39,3 +39,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  debug: true
+  per_page: 3
+  permalink: /page:num/
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
