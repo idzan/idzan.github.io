@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: default
 title: Contact Me - Marko Idzan
 permalink: /contact
 ---
@@ -40,3 +40,4 @@ If you want to contact me you can do it using Social media profiles to contact m
 </form>
 </div>
 </div>
+<script src="/assets/js/contact.js"></script>
