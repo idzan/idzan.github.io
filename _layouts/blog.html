@@ -1,34 +1,23 @@
 ---
 layout: default
 ---
-<style>
-    ul.pager { text-align: center; list-style: none; }
-    ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
-  </style>
-  
-
-
-
 <div class="blog">
     {% for post in paginator.posts %}
     <div class="grid">
         <h2><a href="{{ post. url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
-        <a href="{{ post.url }}" class="btn">Read more</a>
+        <p class="smaller"><strong>Posted on:</strong> {{ post.date | date_to_string }}</p>
+        <a href="{{ post.url }}" class="btn readmore">Read more</a>
     </div>
     {% endfor %}
 </div>
 {% if paginator.total_pages > 1 %}
-<ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  </li>
-  {% endif %}
-</ul>
+<div class="container">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="btn paginator left">Newer</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn paginator medium">Older</a>
+    {% endif %}
+</div>
 {% endif %}

@@ -43,8 +43,8 @@ plugins:
 
 pagination:
   enabled: true
-  debug: true
-  per_page: 3
+  debug: false
+  per_page: 6
   permalink: /page:num/
   title: ':title - Page :num'
   limit: 0

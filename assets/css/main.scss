@@ -277,6 +277,32 @@ picture {
 		text-decoration: none;
 		font-weight: bold;
 	}
+
+	&.paginator {
+		font-weight: bold;
+		text-decoration: none;
+		padding: 1em;
+		text-align: center;
+		width: 25%;
+
+		&.left {
+			float: left !important;
+		}
+
+		&.right {
+			float: right !important;
+		}
+	}
+
+	&.readmore {
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	&.return {
+		text-decoration: none;
+		text-align: center;
+	}
 }
 
 .btn-group {
@@ -297,10 +323,6 @@ picture {
 
 .right {
 	float: right !important;
-}
-
-.center {
-	text-align: center !important;
 }
 
 .lightbox {
