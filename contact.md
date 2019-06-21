@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contact
 title: Contact Me - Marko Idzan
 permalink: /contact
 ---

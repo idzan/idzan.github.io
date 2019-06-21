@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% include css.html %}
+{% include favicons.html %}
+<title>{{ page.title }}</title>
+{% seo title=false %}
+</head>
+<body>
+    <aside>
+        <figure>
+            <img src="/assets/img/logos/MarkoIdzan.svg" alt="" class="logo">
+            <figcaption>Marko Idzan</figcaption>
+        </figure>
+        <img src="/assets/img/icons/menu.svg" alt="Menu" class="menu">
+        {% include navigation.html %}
+        {% include footer.html %}
+    </aside>
+    <main>
+        {{ content }}
+    </main>
+    {% include analytics.html %}
+    <script src="/assets/js/contact.js"></script>
+    <script>
+        (function () {
+            var navMenu = document.querySelector('.nav');
+            var navMenuLink = document.querySelector('.menu');
+
+            navMenuLink.addEventListener('click', function (e) {
+                navMenu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+    {% include pwa.html %}
+</body>
+</html>
