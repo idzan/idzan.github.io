@@ -26,7 +26,7 @@ If you want to contact me you can do it using Social media profiles to contact m
         
         Please fill the contact form if you want to conact me like that
             
-<form method="POST" data-netlify="true" id="contactMe" action="/#contactMe">
+<form method="POST" data-netlify="true" id="contactMe" action="/contact#contactMe">
     <label for="fname">Name</label>
     <input type="text" name="name" id="fname" placeholder="Your name" class="form-name" required>
     <label for="fmail">Email address</label>
