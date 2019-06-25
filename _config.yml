@@ -5,6 +5,11 @@ baseurl:
 url: "https://idzan.eu"
 permalink: /:title/
 markdown: kramdown
+
+collections:
+  projects:
+    output: true
+
 logo: /assets/img/logos/MarkoIdzan.jpg
 lang: en_US
 
@@ -31,18 +36,6 @@ webmaster_verifications:
   bing: 6E829E71F72385BF19D8107B790FA80D
   yandex: a461b1e3fb30179a
 
-collections:
-  projects:
-    output: true
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate-v2
-  - jekyll-pwa-workbox
-  - jekyll-email-protect
-
 pagination:
   enabled: true
   debug: false
@@ -67,4 +60,14 @@ pwa:
   precache_glob_ignores:
     - sw-register.js
 
+ampdir: amp
+
 exclude: [vendor]
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-pwa-workbox
+  - jekyll-email-protect
