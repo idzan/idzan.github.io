@@ -41,6 +41,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-pwa-workbox
+  - jekyll-email-protect
 
 pagination:
   enabled: true

@@ -10,7 +10,7 @@ If you want to contact me you can do it using Social media profiles to contact m
 <div class="container">
     <div class="grid">
         <h4>Email me at:</h4>
-        <img src="/assets/img/icons/mail.svg" alt="Contact me trough email" class="contact">&nbsp;<a href="mailto:marko@idzan.eu">marko@idzan.eu</a>
+        <img src="/assets/img/icons/mail.svg" alt="Contact me trough email" class="contact">&nbsp;<a href="mailto:{{ 'marko@idzan.eu' | encode_email }}">marko@idzan.eu</a>
         <h4>Contact me using phone:</h4>
         <img src="/assets/img/icons/mobile.svg" alt="Contact me using mobile phone" class="contact">&nbsp;<a href="tel:+385921996272">+385 (0)92 1996 272</a>
         <p class="smaller">Number is available with SMS, WhatsApp, Viber, Telegram and regular call.</p>
