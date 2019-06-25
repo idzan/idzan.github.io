@@ -40,6 +40,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - jekyll-pwa-workbox
 
 pagination:
   enabled: true
@@ -50,5 +51,19 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+
+pwa:
+  sw_src_filepath: service-worker.js
+  sw_dest_filepath: service-worker.js
+  dest_js_directory: assets/js
+  precache_recent_posts_num: 10
+  precache_glov_directory: /
+  precache_blog_patterns:
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - "{img}/**/*.{webp,svg,jpg}"
+    - index.html
+    - offline.html
+  precache_glob_ignores:
+    - sw-register.js
 
 exclude: [vendor]
