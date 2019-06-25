@@ -24,7 +24,7 @@ If you want to contact me you can do it using Social media profiles to contact m
         </div>
     <div class="grid">
         
-        Please fill the contact form if you want to conact me like that
+Please fill the contact form if you want to conact me like that
             
 <form method="POST" data-netlify="true" id="contactMe" name="contact">
     <label for="fname">Name</label>
