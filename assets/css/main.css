@@ -365,6 +365,15 @@ textarea {
   color: lightslategray;
 }
 
+a.blogPost {
+  color: #467DFF;
+  text-decoration: none;
+}
+
+a.blogPost:visited {
+  color: #467DFF;
+}
+
 @media only screen and (max-width: 759px) {
   footer {
     display: none;
