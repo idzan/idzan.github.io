@@ -23,4 +23,4 @@ For graphics creating tools, I highly reccomend [Canva](https://canva.com){:targ
 After finishing of rollout process you would need to wait like few hours up to a few days depending when you decide to publish your application until app is rolled out into Play Store&trade;.  
 Now you can *#brag* about your *native* Android Application like a boss 😎👌.
 
-P.S.: if somebody wants to check out my *native* web application you can check it out on [Google Play Store&trade;](#){:target="_blank" rel="noopener"}
+P.S.: if somebody wants to check out my *native* web application you can check it out on [Google Play Store&trade;](https://play.google.com/store/apps/details?id=marko.idzan.twa){:target="_blank" rel="noopener"}
