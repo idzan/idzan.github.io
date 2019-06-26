@@ -374,6 +374,15 @@ a.blogPost:visited {
   color: #467DFF;
 }
 
+a.headerLogo {
+  color: white;
+  text-decoration: none;
+}
+
+a.headerLogo:visited {
+  color: white;
+}
+
 @media only screen and (max-width: 759px) {
   footer {
     display: none;
