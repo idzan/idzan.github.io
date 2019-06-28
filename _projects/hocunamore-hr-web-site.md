@@ -1,8 +1,8 @@
 ---
 layout: project
 name: Hoću na more (hocunamore.hr) Web Site
-category: Web Design and Administration
-categoryclass: web-design web-administration
+category: Web Design & Administration <br> SEO & Marketing
+categoryclass: web-design web-administration seo-marketing
 datacategory: web-design
 thumbnail: /assets/img/projects/thumbnails/hocunamore.hr.jpg
 thumbnailwebp: /assets/img/projects/thumbnails/hocunamore.hr.webp

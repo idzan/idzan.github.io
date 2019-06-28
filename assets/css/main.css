@@ -355,6 +355,11 @@ textarea {
   margin: .5em;
 }
 
+.share {
+  width: 1em;
+  margin: .5em;
+}
+
 .contact {
   width: 1.25em;
   margin-right: .5em;
