@@ -54,14 +54,14 @@ nav {
   height: 100%;
 }
 
-ul {
+.nav {
   display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ul li a {
+.nav li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8em;
@@ -424,14 +424,14 @@ a.headerLogo:visited {
     background: white url("../img/bg.svg") no-repeat bottom right;
     background-size: 55%;
   }
-  ul {
+  .nav {
     display: block;
     margin-top: 2em;
     position: relative !important;
     background: none !important;
     width: 100% !important;
   }
-  ul li a:hover {
+  .nav li a:hover {
     background-color: rgba(255, 255, 255, 0.75);
     color: black !important;
   }
