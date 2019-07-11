@@ -71,20 +71,7 @@ For this part I recommend to check Jekyll's perfect manual, but for basics you w
 * Now copy all of edited code in *_layouts* folder and create file **default.html**
 * After that remove all of your informations from bolierplate in *index.html* in root of your project end enter code from below:
 
-```html
-    ---
-    layout: default
-    title: Blog homepage
-    ---
-    <h1>Welcome to blog</h1>
-    {% for post in site.posts %}
-    <ul>
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    </ul>
-    {% endfor %}
-```
+{% gist ff1b36cdffa41e3d84eb5d8427601372 %}
 
 After doing this part it is time to start editing your CSS, or in my case SCSS.
 
