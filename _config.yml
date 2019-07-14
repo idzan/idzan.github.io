@@ -5,6 +5,7 @@ baseurl:
 url: "https://idzan.eu"
 permalink: /:title/
 markdown: kramdown
+timezone: Europe/Zagreb
 
 collections:
   projects:
