@@ -27,17 +27,7 @@
     </main>
     <script src="/app.js"></script>
     {% include analytics.html %}
-    <script>
-        (function () {
-            var navMenu = document.querySelector('.nav');
-            var navMenuLink = document.querySelector('.menu');
-
-            navMenuLink.addEventListener('click', function (e) {
-                navMenu.classList.toggle('active');
-                e.preventDefault();
-            });
-        })();
-    </script>
+    {% include nav-script.html %}
     {% include portfolio.html %}
 </body>
 </html>

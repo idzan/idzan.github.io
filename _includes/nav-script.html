@@ -1,0 +1,11 @@
+<script>
+    (function () {
+        var navMenu = document.querySelector('nav');
+        var navMenuLink = document.querySelector('.menu');
+
+        navMenuLink.addEventListener('click', function (e) {
+            navMenu.classList.toggle('active');
+            e.preventDefault();
+        });
+    })();
+</script>
