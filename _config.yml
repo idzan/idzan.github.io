@@ -63,6 +63,8 @@ pwa:
 
 exclude: [vendor]
 
+include: [.well-known]
+
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
