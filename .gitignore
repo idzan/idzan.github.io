@@ -1,4 +1,5 @@
 _site/
 backup/
+_drafts/
 .sass-cache
 .jekyll-metadata
