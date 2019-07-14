@@ -71,6 +71,10 @@ nav {
   color: white;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 .logo {
   display: none;
 }
