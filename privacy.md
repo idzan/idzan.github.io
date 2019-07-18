@@ -35,17 +35,20 @@ We don’t keep personal information for longer than is necessary. While we reta
 ### 3. Collection and use of information
 We may collect, hold, use and disclose information for the following purposes and personal information will not be further processed in a manner that is incompatible with these purposes:
 
-* to contact and communicate with you;
-* for analytics, market research and business development, including to operate and improve our website, associated applications and associated social media platforms;
-* to run competitions and/or offer additional benefits to you;
-* and
-for advertising and marketing, including to send you promotional information about our products and services and information about third parties that we consider may be of interest to you.
+<ul class="list">
+<li>to contact and communicate with you;</li>
+<li>for analytics, market research and business development, including to operate and improve our website, associated applications and associated social media platforms;</li>
+<li>to run competitions and/or offer additional benefits to you;</li>
+<li>and for advertising and marketing, including to send you promotional information about our products and services and information about third parties that we consider may be of interest to you.</li>
+</ul>
 
 ### 4. Disclosure of personal information to third parties
 We may disclose personal information to:
 
-* third party service providers for the purpose of enabling them to provide their services, including (without limitation) IT service providers, data storage, web-hosting and server providers, debt collectors, maintenance or problem-solving providers, marketing or advertising providers, professional advisors and payment systems operators; 
-* and sponsors or promoters of any competition we run.
+<ul class="list">
+<li>third party service providers for the purpose of enabling them to provide their services, including (without limitation) IT service providers, data storage, web-hosting and server providers, debt collectors, maintenance or problem-solving providers, marketing or advertising providers, professional advisors and payment systems operators;</li> 
+<li>and sponsors or promoters of any competition we run.</li>
+</ul>
 
 ### 5. International transfers of personal information
 The personal information we collect is stored and processed in Croatia, or where we or our partners, affiliates and third-party providers maintain facilities. By providing us with your personal information, you consent to the disclosure to these overseas third parties.

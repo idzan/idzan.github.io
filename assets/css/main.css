@@ -54,14 +54,14 @@ nav {
   height: 100%;
 }
 
-.nav {
+ul {
   display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav li a {
+ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8em;
@@ -71,7 +71,7 @@ nav {
   color: white;
 }
 
-ul {
+.list {
   list-style-type: circle;
 }
 
