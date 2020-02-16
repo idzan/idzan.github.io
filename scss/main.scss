@@ -39,7 +39,10 @@ img {
 // Per Project Grid Layout
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: 45vw 45vw;
+/* This is for test purposes after pull back on machine */
+grid-template-rows: 5vh auto;
+grid-template-rows: "title" "content";
 }
 @media (max-width: 1025px) {
     section {
