@@ -68,12 +68,16 @@ img {
 // Per Project Grid Layout
 section {
     display: grid;
-    grid-template-rows: 5vh auto;
+    grid-template-rows: 2vh 12vh auto;
     grid-template-areas: 
+        "return"
         "title"
         "content";
 }
 .return {
+    grid-area: return;
+}
+.title {
     grid-area: title;
 }
 .content {

@@ -87,13 +87,19 @@ img {
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5vh auto;
-      grid-template-rows: 5vh auto;
-      grid-template-areas: "title" "content";
+  -ms-grid-rows: 2vh 12vh auto;
+      grid-template-rows: 2vh 12vh auto;
+      grid-template-areas: "return" "title" "content";
 }
 
 .return {
   -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: return;
+}
+
+.title {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: title;
 }
@@ -101,7 +107,7 @@ section {
 .content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: content;
   -ms-grid-columns: 45rem auto;
