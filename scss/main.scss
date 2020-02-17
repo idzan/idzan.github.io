@@ -39,13 +39,22 @@ img {
 // Per Project Grid Layout
 section {
     display: grid;
-    grid-template-columns: 45vw 45vw;
-/* This is for test purposes after pull back on machine */
-grid-template-rows: 5vh auto;
-grid-template-areas: "title" "content";
+    grid-template-rows: 5vh auto;
+    grid-template-areas: 
+        "title"
+        "content";
+}
+.return {
+    grid-area: title;
+}
+.content {
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 45rem auto;
+    gap: 1rem;
 }
 @media (max-width: 1025px) {
-    section {
+    .content {
         display: grid;
         grid-template-columns: auto;
     }
