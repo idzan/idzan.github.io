@@ -24,9 +24,32 @@ body {
         "main"
         "footer";
 }
+// Header
 header {
+    grid-template-areas: head;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     h1 {
+        padding: 2rem;
+        align-self: center;
         font-size: 1.75em;
+    }
+}
+@media (max-width: 1025px) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+// Navigation
+.menu {
+    align-self: center;
+    a {
+        padding: 1rem;
+        text-decoration: none;
+        &[aria-current] {
+            text-decoration: underline;
+        }
     }
 }
 // Grid for Content
