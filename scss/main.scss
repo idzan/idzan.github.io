@@ -1,14 +1,14 @@
 // Basics
 html {
     background: #f5f5f5;
-    color: #565554;
+    color: #1b1b1b;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     scroll-behavior: smooth;
 }
 a {
-    color: #f5f749;
+    color: #0b2fce;
     &:visited {
-        color: #f6f5ae;
+        color: #182769;
     }
 }
 // Main Grid Layout
@@ -17,8 +17,8 @@ body {
     width: 100%;
     font-size: 1em;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh auto 10vh;
+    //grid-template-columns: 1fr;
+    grid-template-rows: auto auto 10vh;
     grid-template-areas: 
         "head"
         "main"
@@ -26,26 +26,21 @@ body {
 }
 // Header
 header {
-    grid-template-areas: head;
+    grid-area: head;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     h1 {
         padding: 2rem;
         align-self: center;
-        font-size: 1.75em;
-    }
-}
-@media (max-width: 1025px) {
-    header {
-        display: grid;
-        grid-template-columns: auto;
+        //font-size: 1.75em;
     }
 }
 // Navigation
 .menu {
     align-self: center;
     a {
-        padding: 1rem;
+        //padding: 1em;
+        padding-right: 1em;
         text-decoration: none;
         &[aria-current] {
             text-decoration: underline;
@@ -57,7 +52,7 @@ main {
     grid-area: main;
     width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
     padding: 2rem;
 }
@@ -68,7 +63,7 @@ img {
 // Per Project Grid Layout
 section {
     display: grid;
-    grid-template-rows: 2vh 12vh auto;
+    grid-template-rows: auto 12vh auto;
     grid-template-areas: 
         "return"
         "title"
@@ -83,19 +78,12 @@ section {
 .content {
     display: grid;
     grid-area: content;
-    grid-template-columns: 45rem auto;
+    //grid-template-columns: 45rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
 }
-@media (max-width: 1025px) {
-    .content {
-        display: grid;
-        grid-template-columns: auto;
-    }
-}
-// Dark Mode
-@media (prefers-color-scheme: dark) {
-    html {
-        background: #565554;
-        color: #f5f5f5;
-    }
+// Footer
+footer {
+    grid-area: footer;
+    padding: 1.5rem;
 }
