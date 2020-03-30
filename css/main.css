@@ -46,12 +46,12 @@ header h1 {
       align-self: center;
 }
 
-.menu a {
+.menu .menuItem {
   padding-right: 1em;
   text-decoration: none;
 }
 
-.menu a[aria-current] {
+.menu .menuItem[aria-current] {
   text-decoration: underline;
 }
 
@@ -102,6 +102,22 @@ section {
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
+}
+
+.returnLink {
+  border-radius: 10px;
+  background: #f5f5f5;
+  -webkit-box-shadow: 10px 10px 20px #b5b5b5,  -10px -10px 20px #ffffff;
+          box-shadow: 10px 10px 20px #b5b5b5,  -10px -10px 20px #ffffff;
+  padding: 1em;
+}
+
+.item {
+  border-radius: 10px;
+  background: #f5f5f5;
+  -webkit-box-shadow: 5px 5px 10px #b5b5b5,  -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #b5b5b5,  -5px -5px 10px #ffffff;
+  padding: 1.5em;
 }
 
 footer {
