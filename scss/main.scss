@@ -28,9 +28,9 @@ body {
 header {
     grid-area: head;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     h1 {
-        padding: 2rem;
+        //padding: 2rem;
         align-self: center;
         //font-size: 1.75em;
     }
@@ -52,7 +52,7 @@ main {
     grid-area: main;
     width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     padding: 2rem;
 }
@@ -79,7 +79,7 @@ section {
     display: grid;
     grid-area: content;
     //grid-template-columns: 45rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
 }
 // Footer
