@@ -1,5 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "marko.idzan.twa",
-               "sha256_cert_fingerprints": ["31:B6:2B:3F:D3:8C:61:F8:E8:0C:E8:01:C2:D3:CF:FB:AD:69:84:B9:09:36:EC:46:9A:E2:9C:CF:30:7F:6A:18"] }
-}]
